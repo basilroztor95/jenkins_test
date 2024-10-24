@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Building...'
 			sh './hello.sh'
-			sh 'sudo mv index.html /var/www/html/'
+			sh 'mv index.html /var/www/html/'
             }
         }
         stage('Test') {
